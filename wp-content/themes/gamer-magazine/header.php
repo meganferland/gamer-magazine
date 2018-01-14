@@ -48,8 +48,10 @@
 		</div>
 	</header><!-- #masthead -->
 
+	<?php if(get_field('page_header')): ?>
 	<section class="page-header">
-		<img src="https://placehold.it/1400x300" alt="" />
+		<img src="<?php echo get_field('page_header'); ?>" alt="" />
 	</section>
+	<?php endif; ?>
 
 	<div id="content" class="site-content">

@@ -847,10 +847,12 @@ object {
 	display: block;
 }
 
+main h1 													{ font-family: 'Open Sans', sans-serif; }
 header.site-header 											{ background: #232323; }
 header.site-header h1 										{ color: #ba373d; }
 header.site-header h1 span 									{ color: #fff; }
 .site-branding .site-title 									{ font-family: 'Open Sans', sans-serif; text-transform: uppercase;}
+.site-branding .site-title a:hover 							{ color: #ab3300; }
 .site-branding a 											{ color: #fff; }
 
 .page-header img 											{ width: 100%; }
@@ -864,6 +866,8 @@ header.site-header h1 span 									{ color: #fff; }
 
 /* Sidebar */
 .vertical-sidebar h2.widget-title							{ color: #333; font-family: 'Open Sans', sans-serif; text-transform: uppercase; border-bottom: 2px solid #555; display: inline-block;}
+.widget h2.widget-title 									{ font-size: 18px; font-family: 'Open Sans', sans-serif; border-bottom: 2px solid #ab3300;}
+.vertical-sidebar a 										{ color: #333; }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {

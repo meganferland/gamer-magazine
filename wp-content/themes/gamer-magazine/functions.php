@@ -42,6 +42,10 @@ if ( ! function_exists( 'gamer_magazine_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		// Additional Crop sizes
+		add_image_size( 'page-banner', 1400, 300 ); // Long crop page banner
+		add_image_size( 'gallery-photo', 600, 400 ); // Gallery crop size
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'gamer-magazine' ),
@@ -104,7 +108,7 @@ function gamer_magazine_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'gamer-magazine' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'gamer-magazine' ),
+		'description'   => esc_html__( 'This is used by your posts and pages', 'gamer-magazine' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -114,7 +118,7 @@ function gamer_magazine_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Frontpage Sidebar', 'gamer-magazine' ),
 		'id'            => 'sidebar-2',
-		'description'   => esc_html__( 'Add widgets here.', 'gamer-magazine' ),
+		'description'   => esc_html__( 'This is the front page sidebar', 'gamer-magazine' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
