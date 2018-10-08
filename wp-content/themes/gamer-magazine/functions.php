@@ -190,6 +190,8 @@ function gamer_magazine_scripts() {
     wp_enqueue_style( 'app', get_template_directory_uri() . '/css/app.css' );
     wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/vendor/foundation.min.js', array('jquery'), '6.2.0', true );
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array('jquery'), '1.0.0', true );
+
+    wp_enqueue_style( 'servers', get_template_directory_uri() . '/servers.css' );
 }
 add_action( 'wp_enqueue_scripts', 'gamer_magazine_scripts' );
 

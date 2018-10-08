@@ -1,0 +1,57 @@
+body														{ background: #111; color: #ddd;}
+main h1 													{ font-family: 'Open Sans', sans-serif; color: #ccc;}
+header.site-header 											{ background: #232323; }
+header.site-header h1 										{ color: #ba373d; }
+header.site-header h1 span 									{ color: #fff; }
+.site-branding .site-title 									{ font-family: 'Open Sans', sans-serif; text-transform: uppercase;}
+.site-branding .site-title a:hover 							{ color: #ab3300; }
+.site-branding a 											{ color: #fff; }
+
+.page-header img 											{ width: 100%; }
+
+.content-area 												{ padding-top: 2em; padding-bottom: 2em; }
+
+.site-footer 												{ background: #232323; color: #eee; font-family: 'Open Sans', sans-serif; padding: 1.25em 0 0 0;}
+.site-footer section 										{ font-size: 14px; margin-bottom: 0; }
+.chunky-footer 												{ background: #333; color: #ddd; padding-top: 2em; padding-bottom: 2.5em;}
+.chunky-footer h2.widget-title 								{ font-family: 'Open Sans', sans-serif; text-transform: uppercase; border-bottom: 2px solid #555; display: inline-block;}
+
+/* Sidebar */
+.vertical-sidebar h2.widget-title							{ color: #ccc; font-family: 'Open Sans', sans-serif; text-transform: uppercase; border-bottom: 2px solid #555; display: inline-block;}
+.widget h2.widget-title 									{ font-size: 18px; font-family: 'Open Sans', sans-serif; border-bottom: 2px solid #ab3300;}
+.vertical-sidebar a 										{ color: #333; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.menu-toggle i											{ color: #fff; font-size: 32px;}
+
+	.chunky-footer h2.widget-title 							{ font-size: 18px; }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.menu-toggle-span hr 									{ display: block;height: 1px;border: 0;border-top: 4px solid #fff;margin: 0.35em 0;padding: 0;}
+	.menu-toggle 											{ display: none;}
+	.main-navigation ul 									{ display: block;}
+	.main-navigation #primary-menu 							{ float: right; }
+	#primary-menu li a 										{ color: #fff; text-transform: uppercase; font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 700;}
+
+	.chunky-footer h2.widget-title 							{ font-size: 22px; }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.site-branding .site-title 								{ font-size: 30px; }
+	.main-navigation #primary-menu 							{ float: right; }
+	#primary-menu li a 										{ color: #fff; text-transform: uppercase; font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 700;}
+	.menu-toggle 											{ display: none;}
+	.main-navigation ul 									{ display: block; }
+
+	.chunky-footer h2.widget-title 							{ font-size: 22px; font-weight: 700; }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

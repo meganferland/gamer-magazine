@@ -12,6 +12,7 @@ wp-content/plugins/hello.php
 local
 /wp-admin
 /wp-includes
+notes.txt
 
 /.htaccess
 /license.txt
